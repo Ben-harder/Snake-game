@@ -4,6 +4,7 @@ var blockSize = Math.sqrt(canvasSize);
 var id = setInterval(frame, 100);
 var mode = "easy";
 var scoreText = document.getElementById("scoreText");
+var direction = '0';
 
 
 const ctx = canvas.getContext('2d');
@@ -46,6 +47,8 @@ function frame()
     drawPoint();
     try
     {
+        snake.setDirection(direction);
+
         snake.draw();
 
         // Check for point
@@ -104,7 +107,7 @@ window.onkeydown = function (e)
 {
     var code = e.keyCode ? e.keyCode : e.which;
 
-    snake.setDirection(code);
+    direction = code;
 }
 
 /* 
