@@ -1,2 +1,2 @@
 # Snake-game
-Simple rendition of classic snake arcade game.
+Simple rendition of the classic snake arcade game.
