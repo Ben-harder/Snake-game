@@ -7,24 +7,25 @@
 </head>
 
 <body>
-    <div class="row">
-        <div class="text-center col-xs-12">
-            <div class="jumbotron" id="scoreJumbotron" style="margin-top: 20px; padding: 10px; background-color: rgb(64, 119, 238);">
-                <h1 id="scoreText"></h1>
-            </div>
-            <canvas id="canvas" width="400" height="400" style="background-color: darkslateblue;"></canvas>
-            <div>
-                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                    <label class="btn btn-primary active">
-                        <input type="radio" name="options" id="Easy" onchange="toggleMode();" autocomplete="off" checked> Easy </label>
-                    <label class="btn btn-primary">
-                        <input type="radio" name="options" id="Hard" onchange="toggleMode();" autocomplete="off"> Hard </label>
-                    </label>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="text-center col-md-auto">
+                <div class="jumbotron" id="scoreJumbotron" style="margin-top: 20px; padding: 10px; background-color: rgb(64, 119, 238);">
+                    <h1 id="scoreText"></h1>
+                </div>
+                <canvas id="canvas" width="400" height="400" style="background-color: darkslateblue;"></canvas>
+                <div>
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="radio" name="options" id="Easy" onchange="toggleMode();" autocomplete="off" checked> Easy </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options" id="Hard" onchange="toggleMode();" autocomplete="off"> Hard </label>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 </body>
 
 
@@ -34,8 +35,8 @@
     crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
     crossorigin="anonymous"></script>
-<script src="./snake.js"></script>
-<script src="./block.js"></script>
-<script src="./game.js"></script>
+<script src="./JavaScript/snake.js"></script>
+<script src="./JavaScript/block.js"></script>
+<script src="./JavaScript/game.js"></script>
 
 </html>
