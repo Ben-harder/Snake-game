@@ -113,6 +113,7 @@ class Snake
         {
             if (this.body[i].isEqual(this.head))
             {
+                console.log("hit");
                 return true;
             }
         }
@@ -126,7 +127,6 @@ class Snake
     reset() 
     {
         this.length = 1;
-        this.alive = true;
         this.head.setPos(2, 2);
         this.direction = '0';
     }

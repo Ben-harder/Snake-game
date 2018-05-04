@@ -57,9 +57,9 @@ function frame()
             snake.push(snake.head.x, snake.head.y);
         }
 
-        // Check for collision
-        if (snake.checkForCollision())
+        if (snake.checkForCollision()) // Check for collision
         {
+            direction = '0';
             snake.reset();
         }
 
@@ -69,6 +69,7 @@ function frame()
     catch (error)
     {
         console.log(error);
+        direction = '0';
         snake.reset();
     }
 }
