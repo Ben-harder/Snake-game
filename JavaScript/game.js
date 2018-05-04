@@ -51,16 +51,16 @@ function frame()
 
         snake.draw();
 
-        // Check for point
-        if (hitPoint(snake.head.x, snake.head.y))
-        {
-            snake.push(snake.head.x, snake.head.y);
-        }
-
         if (snake.checkForCollision()) // Check for collision
         {
             direction = '0';
             snake.reset();
+        }
+
+        // Check for point
+        if (hitPoint(snake.head.x, snake.head.y))
+        {
+            snake.push(snake.head.x, snake.head.y);
         }
 
         // Update score on the jumbotron
@@ -139,7 +139,7 @@ function drawPoint()
 function toggleMode()
 {
     if (mode == "easy")
-    {        
+    {
         mode = "hard";
     }
     else 
