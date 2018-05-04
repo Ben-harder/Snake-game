@@ -11,14 +11,6 @@ const ctx = canvas.getContext('2d');
 
 var grid = [];
 
-/*
- * Modes:
- * -Easy: seek points and grow; avoid hitting the wall or yourself.
- * -Hard: each point spawns an enemy snake which moves in random 
- * directions.
- */
-
-
 /* 
  * Initialize gride with (x,y) coordinates for each position.
  * Each grid[y][x] holds an array containing the pixel coordinates

@@ -48,22 +48,18 @@ class Snake
         switch (code)
         { // Can't go in the opposite direction if the snake's length > 1.
             case 87: // w
-                console.log("w");
                 if (!(this.direction == 'd'))
                     this.direction = 'u';
                 break;
             case 68: // d
-                console.log("d");
                 if (!(this.direction == 'l'))
                     this.direction = 'r';
                 break;
             case 83: // s
-                console.log("s");
                 if (!(this.direction == 'u'))
                     this.direction = 'd';
                 break;
             case 65: // a
-                console.log("a");
                 if (!(this.direction == 'r'))
                     this.direction = 'l';
                 break;
