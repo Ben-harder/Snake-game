@@ -132,21 +132,3 @@ function drawPoint()
     ctx.fillStyle = "#42f4e5";
     ctx.fillRect(grid[point.y][point.x][0], grid[point.y][point.x][1], blockSize - 1, blockSize - 1);
 }
-
-/*
- * Toggle between easy mode and hard mode.
- */
-function toggleMode()
-{
-    if (mode == "easy")
-    {
-        mode = "hard";
-    }
-    else 
-    {
-        // Simple mode with just regular snake gameplay. Seek the points and grow.
-        mode = "easy";
-    }
-
-    snake.reset();
-}
